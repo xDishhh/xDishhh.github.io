@@ -1,0 +1,46 @@
+baseURL = ''
+languageCode = 'en-us'
+title = "ish's blog"
+theme = "smol"
+
+# Parameters
+[params]
+    subtitle = "stuff goes here ..."
+    dateFmt = "02.01.2006 15:04"
+
+# Header
+[menu]
+  [[menu.main]]
+        identifier = "posts"
+        name = "Posts"
+        url = "/posts/"
+        weight = 1 
+
+  [[menu.main]]
+        identifier = "categories"
+        name = "Categories"
+        url = "/categories/"
+        weight = 2 
+
+  [[menu.main]]
+        identifier = "tags"
+        name = "Tags"
+        url = "/tags/"
+        weight = 3
+
+# Footer
+    [[menu.footer]]
+        name = "Github"
+        url = "https://github.com/xDishhh"
+        weight = 1 
+
+    [[menu.footer]]
+        name = "Linkedin"
+        url = "https://www.linkedin.com/in/vitish-bhardwaj-8a87371a6"
+        weight = 2 
+
+    [[menu.footer]]
+        name = "Resume"
+        url = "/imprint"
+        weight = 3 
+    
