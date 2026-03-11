@@ -1,0 +1,133 @@
+/* Visual tweaks: smaller type + lavender foreground on dark background */
+body,
+body[a="dark"],
+body[a="auto"] {
+  background-color: #000000 !important;
+  color: #c4b5fd;
+}
+
+body,
+body *,
+body[a="dark"],
+body[a="dark"] *,
+body[a="auto"],
+body[a="auto"] * {
+  font-family: "JetBrainsMono Nerd Font", "JetBrains Mono", monospace;
+  font-size: 10pt;
+  line-height: 1.25;
+}
+
+body a,
+body a:visited,
+body a:hover,
+body a:active,
+body[a="dark"] a,
+body[a="dark"] a:visited,
+body[a="dark"] a:hover,
+body[a="dark"] a:active,
+body[a="auto"] a,
+body[a="auto"] a:visited,
+body[a="auto"] a:hover,
+body[a="auto"] a:active {
+  color: #ffffff !important;
+}
+
+body figcaption,
+body[a="dark"] figcaption,
+body[a="auto"] figcaption {
+  color: #a78bfa;
+}
+
+article,
+article * {
+  color: #c4b5fd;
+}
+
+code:not(pre > code) {
+  background-color: rgba(196, 181, 253, 0.14);
+  color: #e9ddff;
+}
+
+details,
+blockquote,
+table,
+th,
+td,
+.toc {
+  border-color: #c4b5fd;
+}
+
+.home-page .home-top-image {
+  display: block;
+  margin: 0 auto 1rem auto;
+  width: 300px !important;
+  max-width: 300px !important;
+  height: auto !important;
+}
+
+.home-page {
+  padding-top: 2.25rem;
+  text-align: left;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.home-page,
+.home-page * {
+  font-size: 12pt;
+}
+
+/* Stable home-page spacing */
+.home-page {
+  line-height: 1.35;
+}
+
+.home-page p {
+  margin: 0.9rem 0;
+}
+
+.home-page ul,
+.home-page ol {
+  margin: 0.7rem 0 0.9rem 1.2rem;
+}
+
+.home-page li {
+  margin: 0.35rem 0;
+}
+
+.home-page > header {
+  display: block;
+  text-align: left;
+}
+
+.home-page > ul {
+  margin-left: 1.2rem;
+}
+
+.site-footer {
+  text-align: center;
+}
+
+/* Global content container lock: applies to home, about, and all post pages */
+main.page-content .w {
+  max-width: 640px !important;
+  width: 100%;
+  margin: 0 auto !important;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+}
+
+article {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+img[src$="/images/cat.jpg"] {
+  display: block;
+  max-width: 320px !important;
+  width: 100%;
+  height: auto;
+  margin: 0.75rem auto;
+}

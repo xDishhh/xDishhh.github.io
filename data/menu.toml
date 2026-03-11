@@ -1,0 +1,46 @@
+[[entries]]
+title = "info"
+
+  [[entries.entries]]
+  title = "ad, web & api, infra, mobile, scr and anything and everything."
+
+  [[entries.entries]]
+  title = "about"
+  url = "about"
+
+[[entries]]
+title = "recent posts"
+
+  [entries.post_list]
+  section = "posts"
+  limit = 5
+  show_more = true
+  show_more_text = "See all posts..."
+  show_more_url = "posts"
+
+[[entries]]
+title = "rss"
+url = "index.xml"
+
+[[entries]]
+title = "links"
+
+  [[entries.entries]]
+  title = "x"
+  url = "https://x.com/xDishhh"
+
+
+  [[entries.entries]]
+  title = "hire me!"
+  url = "https://www.linkedin.com/in/vitish-bhardwaj-8a87371a6/"
+
+
+  [[entries.entries]]
+  title = "mail"
+  url = "mailto:bhardwajvitixh@gmail.com"
+
+
+  [[entries.entries]]
+  title = "dont like email discord @ ish666"
+  url = ""
+
