@@ -1,6 +1,6 @@
 +++
 title = "README.md"
-date = 2026-03-09T00:00:00+05:30
+date = 2026-03-09
 draft = false
 +++
 

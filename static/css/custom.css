@@ -95,12 +95,12 @@ td,
   margin: 0.35rem 0;
 }
 
-.home-page > header {
+.home-page>header {
   display: block;
   text-align: left;
 }
 
-.home-page > ul {
+.home-page>ul {
   margin-left: 1.2rem;
 }
 
@@ -130,4 +130,35 @@ img[src$="/images/cat.jpg"] {
   width: 100%;
   height: auto;
   margin: 0.75rem auto;
+}
+
+/* This will make headings white inside blog posts */
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+  color: #ffffff;
+}
+
+/* This will make the text inside '' single quotes look better */
+article code:not(pre code) {
+  background: transparent;
+  /* removes box */
+  color: #ffffff;
+  /* text color */
+  border: 1px solid #c4b5fd;
+  /* optional subtle outline */
+  padding: 0.05em 0.25em;
+  /* smaller padding */
+  border-radius: 3px;
+  /* optional rounded corners */
+  font-style: italic;
+  /* optional */
+}
+
+/* justify text */
+article {
+  text-align: justify;
 }
