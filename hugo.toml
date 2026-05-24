@@ -20,6 +20,7 @@ disableKinds = ["taxonomy", "term"]
         title = true
   [markup.highlight]
     style = "rrt"
+    noClasses = false
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 3

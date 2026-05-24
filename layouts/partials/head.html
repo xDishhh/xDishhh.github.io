@@ -17,6 +17,6 @@
   {{ $sass := resources.Get "css/main.scss" }}
   {{ $style := $sass | css.Sass $options | resources.Fingerprint "sha512" }}
   <link rel="stylesheet" href="{{ $style.Permalink | relURL }}" integrity="{{ $style.Data.Integrity }}" />
-  <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}" />
+  <link rel="stylesheet" href="{{ "css/custom.css?v=5" | relURL }}" />
   {{ if .Params.mathjax }} {{ partial "mathjax.html" . }} {{ end }}
 </head>

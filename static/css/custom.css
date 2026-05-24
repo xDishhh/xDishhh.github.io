@@ -132,6 +132,16 @@ img[src$="/images/cat.jpg"] {
   margin: 0.75rem auto;
 }
 
+article p>img {
+  display: block;
+  width: auto;
+  max-width: min(100%, 480px);
+  max-height: 420px;
+  height: auto;
+  object-fit: contain;
+  margin: 0.75rem auto;
+}
+
 /* This will make headings white inside blog posts */
 article h1,
 article h2,
@@ -158,7 +168,60 @@ article code:not(pre code) {
   /* optional */
 }
 
+/* Code blocks */
+article .highlight,
+article .chroma {
+  background: #000000 !important;
+  color: #ffffff !important;
+}
+
+article .highlight pre.chroma,
+article pre.chroma {
+  background: #000000 !important;
+  border: 1px solid rgba(196, 181, 253, 0.45);
+  color: #ffffff !important;
+  max-width: 100%;
+  overflow-x: visible !important;
+  white-space: pre-wrap !important;
+  overflow-wrap: anywhere !important;
+  word-break: break-all !important;
+}
+
+article .highlight pre.chroma code,
+article pre.chroma code {
+  color: #ffffff !important;
+  white-space: pre-wrap !important;
+  overflow-wrap: anywhere !important;
+  word-break: break-all !important;
+}
+
+article .highlight pre.chroma code *,
+article pre.chroma code * {
+  color: #ffffff !important;
+  white-space: inherit !important;
+  overflow-wrap: anywhere !important;
+  word-break: break-all !important;
+}
+
+article .highlight pre.chroma .line,
+article .highlight pre.chroma .cl,
+article pre.chroma .line,
+article pre.chroma .cl {
+  display: contents;
+}
+
 /* justify text */
 article {
   text-align: justify;
+}
+
+/* Final override: all fenced code text must be white */
+article pre,
+article pre *,
+article .highlight,
+article .highlight *,
+article .chroma,
+article .chroma * {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
 }
