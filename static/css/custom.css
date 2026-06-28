@@ -225,3 +225,8 @@ article .chroma * {
   color: #ffffff !important;
   -webkit-text-fill-color: #ffffff !important;
 }
+
+article p.big img {
+  max-width: 100%;     /* up to the ~600px column instead of 480px */
+  max-height: none;    /* drop the 420px height cap */
+}
